@@ -1,11 +1,9 @@
-```markdown
 # Curie CLI
 
 Command-line interface for the [Curie](https://curie.sh) scientific AI platform. Run biology, chemistry, and physics models directly from your terminal.
 
 ## Installation
-
-```bash
+```
 pip install curie-cli
 ```
 
