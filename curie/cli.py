@@ -16,9 +16,9 @@ app.command()(embed.embed)
 app.command()(models.models)
 
 @app.callback()
+@app.callback()
 def main(ctx: typer.Context):
-    if ctx.invoked_subcommand is None:
-        print_banner()
+    print_banner()
 
 if __name__ == "__main__":
     app()
