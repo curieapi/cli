@@ -6,10 +6,9 @@ build-backend = "hatchling.build"
 name = "curie-cli"
 version = "0.1.0"
 description = "CLI for the Curie scientific AI platform"
-license = { text = "MIT" }
-requires-python = ">=3.10"
 readme = "README.md"
-repository = "https://github.com/curieapi/curie-cli"
+license = { text = "MIT" }
+requires-python = ">=3.11"
 dependencies = [
     "typer>=0.12.0",
     "httpx>=0.27.0",
@@ -17,8 +16,15 @@ dependencies = [
     "pyfiglet>=1.0.4"
 ]
 
+[project.urls]
+Repository = "https://github.com/curieapi/curie-cli"
+Homepage = "https://curie.sh"
+
 [project.scripts]
 curie = "curie.cli:app"
 
 [project.optional-dependencies]
 dev = ["pytest", "pytest-asyncio"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["curie"]
